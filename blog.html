@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CW9SCH85F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-1CW9SCH85F');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Blog da Coguis Informática com conteúdos sobre manutenção de computadores, presença digital, segurança da informação e tecnologia explicada de forma simples.">
+    <meta name="theme-color" content="#040309">
+
+    <title>Blog da Coguis Informática | Tecnologia explicada de forma simples</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <header class="site-header">
+        <div class="container header__inner">
+            <a class="brand" href="index.html#inicio" aria-label="Ir para o início da Coguis Informática">
+                <img class="brand__logo" src="images/logoCoguis.png" alt="Logo da Coguis Informática">
+                <div class="brand__copy">
+                    <strong class="brand__name">Coguis Informática</strong>
+                </div>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"
+                aria-label="Abrir menu de navegação">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="menu-principal" aria-label="Navegação principal">
+                <ul class="site-nav__list">
+                    <li><a class="site-nav__link" href="index.html#inicio">Início</a></li>
+                    <li><a class="site-nav__link" href="index.html#servicos">Serviços</a></li>
+                    <li><a class="site-nav__link" href="index.html#confianca">Confiança</a></li>
+                    <li><a class="site-nav__link" href="index.html#desenvolvimento-web">Web</a></li>
+                    <li><a class="site-nav__link" href="blog.html">Blog</a></li>
+                    <li><a class="site-nav__link" href="index.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="blog-hero" id="inicio-blog">
+            <div class="container blog-hero__grid">
+                <figure class="blog-hero__media">
+                    <img src="images/blog/hero/coguisUniforme2.png"
+                        alt="Mascote Coguis representando o Blog da Coguis Informática" loading="eager"
+                        decoding="async">
+                </figure>
+
+                <div class="blog-hero__content">
+                    <p class="eyebrow">Blog da Coguis Informática</p>
+                    <h1 class="blog-hero__title">Blog do Coguis</h1>
+                    <p class="blog-hero__text">Tecnologia explicada de forma simples.</p>
+                    <a class="button button--primary" href="#categorias">Explorar artigos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-intro" aria-labelledby="intro-blog-titulo">
+            <div class="container">
+                <div class="blog-intro__card">
+
+                    <figure class="blog-intro__media">
+                        <img src="images/blog/hero/coguisBemVindo1.png"
+                            alt="Mascote Coguis dando boas-vindas ao Blog da Coguis Informática" loading="lazy"
+                            decoding="async">
+                    </figure>
+
+                    <p class="eyebrow">Bem-vindo ao Blog do Coguis</p>
+                    <h2 id="intro-blog-titulo" class="section-title">Tecnologia explicada de forma simples.</h2>
+                    <p class="section-text">
+                        Aqui você encontra conteúdos sobre manutenção de computadores e notebooks, presença digital,
+                        segurança da informação e tecnologia, sempre explicados de forma clara, prática e
+                        acessível.<br><br>
+
+                        Nosso objetivo é ajudar você a resolver problemas, aprender algo novo e utilizar a tecnologia
+                        com mais confiança, seja em casa, no trabalho ou no seu negócio.<br><br>
+
+                        Todo o conteúdo é produzido pela Coguis Informática, com base em experiências reais, boas
+                        práticas e no compromisso de compartilhar conhecimento que realmente faça a diferença.
+
+                    <div class="blog-intro__tags">
+                        <span>💻 Manutenção</span>
+                        <span>🌐 Presença Digital</span>
+                        <span>🔒 Segurança</span>
+                        <span>🛠 Tecnologia</span>
+                    </div>
+
+                    <p class="blog-intro__footer">
+                        🍄 Mais do que um blog, este é um espaço para aprender, evoluir e utilizar a tecnologia com mais
+                        confiança.
+                    </p>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-categories" id="categorias" aria-labelledby="categorias-titulo">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Categorias</p>
+                    <h2 id="categorias-titulo" class="section-title">Escolha por onde começar.</h2>
+                </div>
+
+                <div class="blog-categories__grid">
+                    <article class="category-card">
+                        <img src="images/blog/categorias/manutencao.png" alt="Arte da categoria Manutenção">
+                        <div>
+                            <h3>Manutenção</h3>
+                            <p>Artigos sobre notebooks, computadores, SSD, limpeza preventiva e desempenho.</p>
+                            <a href="#">Ver categoria →</a>
+                        </div>
+                    </article>
+
+                    <article class="category-card">
+                        <img src="images/blog/categorias/presenca-digital.png" alt="Arte da categoria Presença Digital">
+                        <div>
+                            <h3>Presença Digital</h3>
+                            <p>Conteúdos sobre Google, sites, SEO, Analytics e posicionamento online.</p>
+                            <a href="#">Ver categoria →</a>
+                        </div>
+                    </article>
+
+                    <article class="category-card">
+                        <img src="images/blog/categorias/seguranca.png" alt="Arte da categoria Segurança">
+                        <div>
+                            <h3>Segurança</h3>
+                            <p>Dicas sobre golpes digitais, backup, senhas, antivírus e proteção de dados.</p>
+                            <a href="#">Ver categoria →</a>
+                        </div>
+                    </article>
+
+                    <article class="category-card">
+                        <img src="images/blog/categorias/dicas.png" alt="Arte da categoria Dicas">
+                        <div>
+                            <h3>Dicas</h3>
+                            <p>Orientações simples para usar melhor seus equipamentos e evitar problemas.</p>
+                            <a href="#">Ver categoria →</a>
+                        </div>
+                    </article>
+
+                    <article class="category-card">
+                        <img src="images/blog/categorias/bastidores-coguis.png"
+                            alt="Arte da categoria Bastidores do Coguis">
+                        <div>
+                            <h3>Bastidores do Coguis</h3>
+                            <p>O dia a dia da Coguis, projetos, atendimentos e evolução da empresa.</p>
+                            <a href="#">Ver categoria →</a>
+                        </div>
+                    </article>
+
+                    <article class="category-card">
+                        <img src="images/blog/categorias/meu-site-de-estudos.png"
+                            alt="Arte da categoria Meu Site de Estudos">
+                        <div>
+                            <h3>Meu Site de Estudos</h3>
+                            <p>Conteúdos conectando aprendizado, programação, banco de dados e projetos reais.</p>
+                            <a href="#">Ver categoria →</a>
+                        </div>
+                    </article>
+
+                    <article class="category-card category-card--center">
+                        <img src="images/blog/categorias/tecnologia-explicada.png"
+                            alt="Arte da categoria Tecnologia Explicada">
+                        <div>
+                            <h3>Tecnologia Explicada</h3>
+                            <p>Conceitos de tecnologia explicados de forma simples, sem códigos e sem complicação.</p>
+                            <a href="#">Ver categoria →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-post" aria-labelledby="destaque-titulo">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Artigo em destaque</p>
+                    <h2 id="destaque-titulo" class="section-title">Leitura recomendada.</h2>
+                </div>
+
+                <article class="featured-post__card">
+                    <figure class="featured-post__media">
+                        <img src="images/blog/artigos/notebook-esquentando.png"
+                            alt="Imagem ilustrativa de notebook esquentando">
+                    </figure>
+
+                    <div class="featured-post__content">
+                        <span class="post-category">Manutenção</span>
+                        <h3>Notebook esquentando?</h3>
+                        <p>Entenda os principais motivos que fazem um notebook aquecer demais e saiba quando procurar
+                            assistência técnica.</p>
+                        <a class="button button--secondary" href="#">Ler artigo →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="latest-posts" aria-labelledby="ultimos-artigos-titulo">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Últimos artigos</p>
+                    <h2 id="ultimos-artigos-titulo" class="section-title">Novidades no blog.</h2>
+                </div>
+
+                <div class="latest-posts__grid">
+                    <article class="post-card">
+                        <img src="images/blog/artigos/notebook-esquentando.png" alt="Artigo sobre notebook esquentando">
+                        <div>
+                            <span class="post-category">Manutenção</span>
+                            <h3>Notebook esquentando?</h3>
+                            <a href="#">Leia →</a>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <img src="images/blog/artigos/o-que-e-seo.png" alt="Artigo sobre SEO">
+                        <div>
+                            <span class="post-category">Presença Digital</span>
+                            <h3>O que é SEO?</h3>
+                            <a href="#">Leia →</a>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <img src="images/blog/artigos/senhas-seguras.png" alt="Artigo sobre senhas seguras">
+                        <div>
+                            <span class="post-category">Segurança</span>
+                            <h3>Como criar senhas mais seguras?</h3>
+                            <a href="#">Leia →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="study-project" aria-labelledby="estudos-titulo">
+            <div class="container study-project__grid">
+                <div class="study-project__content">
+                    <p class="eyebrow">Meu Site de Estudos</p>
+                    <h2 id="estudos-titulo" class="section-title">Conheça também meu projeto educacional.</h2>
+                    <p class="section-text">
+                        Um espaço onde compartilho estudos sobre programação, banco de dados, Linux,
+                        GitHub, JavaScript e desenvolvimento web utilizando projetos reais.
+                    </p>
+                    <a class="button button--primary" href="https://luanlhp777.github.io/meu-site-estudos/"
+                        target="_blank" rel="noopener noreferrer">Conhecer projeto</a>
+                </div>
+
+                <figure class="study-project__media">
+                    <img src="images/blog/categorias/meu-site-de-estudos.png" alt="Arte do projeto Meu Site de Estudos">
+                </figure>
+            </div>
+        </section>
+
+        <section class="blog-final-cta" aria-labelledby="cta-blog-titulo">
+            <div class="container blog-final-cta__grid">
+                <div>
+                    <p class="eyebrow">Precisa de ajuda?</p>
+                    <h2 id="cta-blog-titulo" class="section-title">Fale agora com a Coguis Informática.</h2>
+                    <ul class="blog-final-cta__list">
+                        <li>Seu computador está lento?</li>
+                        <li>Seu notebook esquenta?</li>
+                        <li>Sua empresa precisa aparecer no Google?</li>
+                    </ul>
+                    <a class="button button--primary" href="https://wa.me/5511960281070" target="_blank"
+                        rel="noopener noreferrer">Solicitar atendimento</a>
+                </div>
+
+                <div class="blog-explore">
+                    <h3>Explore mais</h3>
+                    <ul>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#">Mais lidos</a></li>
+                        <li><a href="#">Últimos artigos</a></li>
+                        <li><a href="https://www.instagram.com/coguisinformatica/" target="_blank"
+                                rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://github.com/coguisinformatica" target="_blank"
+                                rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" aria-labelledby="footer-titulo">
+        <div class="container site-footer__grid">
+            <div class="site-footer__brand">
+                <img class="site-footer__logo" src="images/logoCoguis.png" alt="Logo da Coguis Informática"
+                    loading="lazy" decoding="async">
+                <h2 id="footer-titulo" class="site-footer__title">Coguis Informática</h2>
+                <p class="site-footer__tagline">Tecnologia que vai até você</p>
+            </div>
+
+            <nav class="site-footer__nav" aria-label="Links rápidos">
+                <h3 class="site-footer__heading">Links rápidos</h3>
+                <ul class="site-footer__links">
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="site-footer__contact">
+                <h3 class="site-footer__heading">Contato</h3>
+                <ul class="site-footer__meta">
+                    <li><a href="https://www.instagram.com/coguisinformatica/" target="_blank"
+                            rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="mailto:coguisinformatica@gmail.com">E-mail</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container site-footer__bottom">
+            <p>&copy; 2026 Coguis Informática. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/5511960281070" target="_blank" rel="noopener noreferrer"
+        aria-label="Falar com a Coguis Informática no WhatsApp">
+        <span class="whatsapp-float__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path
+                    d="M12 3.25A8.75 8.75 0 0 0 4.54 16.57L3.25 20.75l4.31-1.23A8.75 8.75 0 1 0 12 3.25Zm0 1.5a7.25 7.25 0 0 1 6.17 11.06l-.19.3.76 2.47-2.55-.73-.29.17A7.25 7.25 0 1 1 12 4.75Zm-3.18 3.1c-.2 0-.5.08-.76.36-.26.28-.98.96-.98 2.34s1 2.72 1.14 2.91c.15.2 1.97 3.16 4.87 4.31 2.4.95 2.9.76 3.42.72.52-.03 1.69-.68 1.93-1.34.24-.66.24-1.22.17-1.34-.07-.11-.26-.18-.55-.32-.28-.14-1.69-.84-1.95-.93-.26-.1-.45-.14-.64.14-.19.28-.73.93-.89 1.12-.17.2-.33.22-.62.08-.28-.14-1.2-.44-2.29-1.42-.85-.75-1.68-1.43-1.97-1.6-.28-.17-.43-.02-.57.12-.13.13-.33.28-.49.42-.17.14-.28.18-.47.28-.2.1-.37.05-.52-.02-.14-.07-1.56-.64-2.14-.88-.55-.23-.47-.46-.48-.64h-.55Z"
+                    fill="currentColor" />
+            </svg>
+        </span>
+        <span class="sr-only">WhatsApp</span>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
