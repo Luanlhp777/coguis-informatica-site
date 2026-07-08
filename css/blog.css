@@ -96,21 +96,17 @@
 }
 
 .blog-intro__card {
+    position: relative;
     display: grid;
     gap: var(--space-md);
     padding: clamp(2rem, 5vw, 3rem);
     border: 1px solid rgba(199, 111, 255, .18);
     border-radius: var(--radius-xl);
     background:
-        radial-gradient(circle at top right,
-            rgba(168, 85, 247, .10),
-            transparent 30%),
-        linear-gradient(180deg,
-            rgba(15, 11, 26, .96),
-            rgba(8, 6, 15, .98));
+        radial-gradient(circle at top right, rgba(168, 85, 247, .10), transparent 35%),
+        linear-gradient(180deg, rgba(15, 11, 26, .96), rgba(8, 6, 15, .98));
     box-shadow: var(--shadow-glow);
-
-
+    overflow: hidden;
 }
 
 .blog-categories__grid {
@@ -308,31 +304,50 @@
 }
 
 .post-card {
-    display: grid;
-    gap: var(--space-md);
-    padding: 0.75rem;
+    position: relative;
+    min-height: 26rem;
+    padding: clamp(1.4rem, 3vw, 1.8rem);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-xl);
-    background: linear-gradient(180deg, rgba(13, 9, 24, 0.92), rgba(7, 5, 14, 0.96));
+    background: #05030a;
     box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.post-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-border-strong);
+    box-shadow: var(--shadow-glow);
 }
 
 .post-card img {
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
-    object-position: center;
-    border-radius: calc(var(--radius-xl) - 0.55rem);
+    display: none;
 }
 
 .post-card div {
+
+    position: absolute;
+
+    left: 1.6rem;
+
+    right: 1.6rem;
+
+    bottom: 1.5rem;
+
+    z-index: 2;
+
     display: grid;
-    gap: 0.65rem;
-    padding: 0.35rem 0.35rem 0.75rem;
+
+    gap: .8rem;
 }
 
 .post-card h3 {
     font-size: 1.25rem;
+    line-height: 1.15;
+}
+
+.post-card a {
+    align-self: end;
 }
 
 .study-project__grid {
@@ -508,19 +523,19 @@
 .blog-intro__tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 24px;
+    gap: .85rem;
+    max-width: 58rem;
+    margin-top: .75rem;
 }
 
 .blog-intro__tags span {
-    padding: 10px 18px;
-    border-radius: 999px;
+    padding: .7rem 1rem;
+    border: 1px solid rgba(168, 85, 247, .28);
+    border-radius: var(--radius-pill);
     background: rgba(168, 85, 247, .12);
-    border: 1px solid rgba(168, 85, 247, .25);
     color: var(--color-brand-strong);
     font-size: .9rem;
-    font-weight: 600;
-    transition: .3s;
+    font-weight: 800;
 }
 
 .blog-intro__tags span:hover {
@@ -529,9 +544,10 @@
 }
 
 .blog-intro__footer {
-    margin-top: 18px;
-    font-weight: 600;
+    max-width: 58rem;
+    margin: .75rem 0 0;
     color: var(--color-brand-strong);
+    font-weight: 800;
 }
 
 .blog-intro__card {
@@ -558,11 +574,19 @@
 }
 
 .blog-intro__content {
-    width: min(62%, 760px);
     display: grid;
     gap: var(--space-md);
-    position: relative;
-    z-index: 2;
+    width: 100%;
+    max-width: none;
+}
+
+.blog-intro__content .section-title {
+    max-width: 16ch;
+}
+
+.blog-intro__content .section-text {
+    max-width: none;
+    width: 100%;
 }
 
 .blog-intro__media {
@@ -686,5 +710,140 @@
         font-size: 0.9rem;
         line-height: 1.45;
         max-width: 18rem;
+    }
+}
+
+@media (max-width: 47.99rem) {
+    .post-card {
+        min-height: 24rem;
+    }
+
+    .post-card div {
+        position: absolute;
+        left: 1.25rem;
+        right: 1.25rem;
+        bottom: 1.25rem;
+        z-index: 2;
+    }
+}
+
+.post-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.post-card::after {
+
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(180deg,
+            rgba(4, 3, 9, .05) 0%,
+            rgba(4, 3, 9, .25) 45%,
+            rgba(4, 3, 9, .92) 100%);
+
+    z-index: 1;
+}
+
+.post-card:hover::before {
+    transform: scale(1.03);
+}
+
+.post-card--notebook::before {
+    background-image: url("../images/blog/artigos/notebookEsquentando.png");
+}
+
+.post-card--seo::before {
+    background-image: url("../images/blog/artigos/coguisPresencaDigital3.png");
+}
+
+.post-card--seguranca::before {
+    background-image: url("../images/blog/artigos/segurancaDigital2.png");
+}
+
+.blog-intro__columns {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 3rem;
+
+    margin-top: 1rem;
+}
+
+.blog-intro__column {
+
+    display: grid;
+
+    gap: 1.6rem;
+}
+
+.blog-intro__column p {
+
+    margin: 0;
+
+    color: var(--color-text-soft);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+}
+
+@media(max-width:768px) {
+
+    .blog-intro__columns {
+
+        grid-template-columns: 1fr;
+
+        gap: 1.2rem;
+    }
+
+}
+
+@media (max-width: 47.99rem) {
+    .featured-post__card {
+        min-height: 34rem;
+    }
+
+    .featured-post__card::before {
+        background-position: 28% center;
+    }
+
+    .featured-post__card::after {
+        background:
+            linear-gradient(180deg,
+                rgba(4, 3, 9, 0.08) 0%,
+                rgba(4, 3, 9, 0.22) 42%,
+                rgba(4, 3, 9, 0.90) 72%,
+                rgba(4, 3, 9, 0.98) 100%);
+    }
+
+    .featured-post__content {
+        position: absolute;
+        left: 1.4rem;
+        right: 1.4rem;
+        bottom: 1.4rem;
+        top: auto;
+        transform: none;
+        width: auto;
+        gap: 0.75rem;
+    }
+
+    .featured-post__content h3 {
+        font-size: 1.75rem;
+    }
+
+    .featured-post__content p {
+        font-size: 0.95rem;
+        line-height: 1.55;
     }
 }
