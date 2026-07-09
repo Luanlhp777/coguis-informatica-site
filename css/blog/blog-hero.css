@@ -1,0 +1,53 @@
+.blog-hero__grid {
+    display: grid;
+    align-items: start;
+    min-height: 40rem;
+    padding: clamp(2rem, 5vw, 3rem);
+    box-shadow: var(--shadow-glow);
+}
+
+.blog-hero__grid::before {
+    background-image: url("../../images/blog/hero/coguisUniforme2.png");
+    background-position: center top;
+}
+
+.blog-hero__grid::after {
+    background:
+        linear-gradient(90deg,
+            rgba(4, 3, 9, 0.96) 0%,
+            rgba(4, 3, 9, 0.86) 38%,
+            rgba(4, 3, 9, 0.42) 68%,
+            rgba(4, 3, 9, 0.12) 100%);
+}
+
+.blog-hero__media {
+    display: none;
+}
+
+.blog-hero__content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: var(--space-sm);
+    max-width: 34rem;
+    margin-top: clamp(1rem, 4vw, 3rem);
+}
+
+.blog-hero__title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 7vw, 5rem);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+}
+
+.blog-hero__text {
+    margin: 0;
+    color: var(--color-text-soft);
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+}
+
+.blog-hero__content .button {
+    justify-self: start;
+    margin-top: 0.35rem;
+}

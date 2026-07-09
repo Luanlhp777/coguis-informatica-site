@@ -1,0 +1,51 @@
+.featured-post__card {
+    min-height: 28rem;
+    padding: clamp(2rem, 5vw, 3rem);
+    box-shadow: var(--shadow-glow);
+}
+
+.featured-post__card::before {
+    background-image: url("../../images/blog/artigos/notebookEsquentando2.png");
+    background-position: left center;
+}
+
+.featured-post__card::after {
+    background: linear-gradient(90deg,
+            rgba(4, 3, 9, 0.08) 0%,
+            rgba(4, 3, 9, 0.20) 45%,
+            rgba(4, 3, 9, 0.86) 68%,
+            rgba(4, 3, 9, 0.98) 100%);
+}
+
+.featured-post__media {
+    display: none;
+}
+
+.featured-post__content {
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    transform: translateY(-50%);
+    width: 34%;
+    z-index: 2;
+    display: grid;
+    gap: 1rem;
+    padding: 0;
+}
+
+.featured-post__content h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
+    line-height: 1.08;
+    letter-spacing: -.03em;
+}
+
+.featured-post__content p {
+    margin: 0;
+    color: var(--color-text-soft);
+}
+
+.featured-post__content .button {
+    justify-self: start;
+}

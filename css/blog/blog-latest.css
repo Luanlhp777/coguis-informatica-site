@@ -1,0 +1,63 @@
+.latest-posts__grid {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.post-card {
+    min-height: 26rem;
+    padding: clamp(1.4rem, 3vw, 1.8rem);
+}
+
+.post-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-border-strong);
+    box-shadow: var(--shadow-glow);
+}
+
+.post-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg,
+            rgba(4, 3, 9, .05) 0%,
+            rgba(4, 3, 9, .25) 45%,
+            rgba(4, 3, 9, .92) 100%);
+
+    z-index: 1;
+}
+
+.post-card img {
+    display: none;
+}
+
+.post-card div {
+    position: absolute;
+    left: 1.6rem;
+    right: 1.6rem;
+    bottom: 1.5rem;
+    z-index: 2;
+    display: grid;
+    gap: .8rem;
+}
+
+.post-card h3 {
+    font-size: 1.25rem;
+    line-height: 1.15;
+}
+
+.post-card a {
+    align-self: end;
+}
+
+.post-card--notebook::before {
+    background-image: url("../../images/blog/artigos/notebookEsquentando.png");
+}
+
+.post-card--seo::before {
+    background-image: url("../../images/blog/artigos/coguisPresencaDigital3.png");
+}
+
+.post-card--seguranca::before {
+    background-image: url("../../images/blog/artigos/segurancaDigital2.png");
+}

@@ -1,0 +1,54 @@
+.image-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    background: #05030a;
+    box-shadow: var(--shadow-sm);
+}
+
+.image-card::before,
+.image-card::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+}
+
+.image-card::before {
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: transform var(--transition-base);
+}
+
+.image-card::after {
+    z-index: 1;
+    pointer-events: none;
+}
+
+.image-card:hover::before {
+    transform: scale(1.03);
+}
+
+.image-card__content {
+    position: relative;
+    z-index: 2;
+}
+
+.blog-card-title {
+    margin: 0;
+    font-family: var(--font-display);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+}
+
+.blog-card-text {
+    margin: 0;
+    color: var(--color-text-soft);
+}
+
+.blog-link {
+    color: var(--color-brand-strong);
+    font-weight: 800;
+}

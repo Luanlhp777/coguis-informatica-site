@@ -57,7 +57,7 @@
 
     <main id="conteudo-principal">
         <section class="blog-hero" id="inicio-blog">
-            <div class="container blog-hero__grid">
+            <div class="container blog-hero__grid image-card">
                 <figure class="blog-hero__media">
                     <img src="images/blog/hero/coguisUniforme2.png"
                         alt="Mascote Coguis representando o Blog da Coguis Informática" loading="eager"
@@ -163,7 +163,7 @@
                 </div>
 
                 <div class="blog-categories__grid">
-                    <article class="category-card">
+                    <article class="category-card image-card">
                         <img src="images/blog/categorias/blogManutencao.png" alt="Arte da categoria Manutenção">
                         <div>
                             <h3>Manutenção</h3>
@@ -172,7 +172,7 @@
                         </div>
                     </article>
 
-                    <article class="category-card">
+                    <article class="category-card image-card">
                         <img src="images/blog/categorias/blogPresencaDigital.png"
                             alt="Arte da categoria Presença Digital">
                         <div>
@@ -182,7 +182,7 @@
                         </div>
                     </article>
 
-                    <article class="category-card">
+                    <article class="category-card image-card">
                         <img src="images/blog/categorias/blogSeguranca.png" alt="Arte da categoria Segurança">
                         <div>
                             <h3>Segurança</h3>
@@ -191,7 +191,7 @@
                         </div>
                     </article>
 
-                    <article class="category-card">
+                    <article class="category-card image-card">
                         <img src="images/blog/categorias/blogDicas.png" alt="Arte da categoria Dicas">
                         <div>
                             <h3>Dicas</h3>
@@ -200,7 +200,7 @@
                         </div>
                     </article>
 
-                    <article class="category-card">
+                    <article class="category-card image-card">
                         <img src="images/blog/categorias/blogBastidores.png"
                             alt="Arte da categoria Bastidores do Coguis">
                         <div>
@@ -210,7 +210,7 @@
                         </div>
                     </article>
 
-                    <article class="category-card">
+                    <article class="category-card image-card">
                         <img src="images/blog/categorias/blogMeuSiteEstudos.png"
                             alt="Arte da categoria Meu Site de Estudos">
                         <div>
@@ -220,7 +220,8 @@
                         </div>
                     </article>
 
-                    <article class="category-card category-card--center">
+                    <!--CARD CENTRALIZADO-->
+                    <article class="category-card category-card--center image-card">
                         <img src="images/blog/categorias/blogTecnologiaExplicada.png"
                             alt="Arte da categoria Tecnologia Explicada">
                         <div>
@@ -240,7 +241,7 @@
                     <h2 id="destaque-titulo" class="section-title">Leitura recomendada.</h2>
                 </div>
 
-                <article class="featured-post__card">
+                <article class="featured-post__card image-card">
                     <figure class="featured-post__media">
                         <img src="images/blog/artigos/notebookEsquentando2.png"
                             alt="Imagem ilustrativa de notebook esquentando">
@@ -265,7 +266,7 @@
                 </div>
 
                 <div class="latest-posts__grid">
-                    <article class="post-card post-card--notebook">
+                    <article class="post-card post-card--notebook image-card">
                         <img src="images/blog/artigos/notebookEsquentando.png" alt="Artigo sobre notebook esquentando">
                         <div>
                             <span class="post-category">Manutenção</span>
@@ -274,7 +275,7 @@
                         </div>
                     </article>
 
-                    <article class="post-card post-card--seo">
+                    <article class="post-card post-card--seo image-card">
                         <img src="images/blog/artigos/coguisPresencaDigital3.png" alt="Artigo sobre SEO">
                         <div>
                             <span class="post-category">Presença Digital</span>
@@ -283,7 +284,7 @@
                         </div>
                     </article>
 
-                    <article class="post-card post-card--seguranca">
+                    <article class="post-card post-card--seguranca image-card">
                         <img src="images/blog/artigos/segurancaDigital2.png" alt="Artigo sobre senhas seguras">
                         <div>
                             <span class="post-category">Segurança</span>
@@ -327,56 +328,97 @@
                     <a class="button button--primary" href="https://wa.me/5511960281070" target="_blank"
                         rel="noopener noreferrer">Solicitar atendimento</a>
                 </div>
-
-                <div class="blog-explore">
-                    <h3>Explore mais</h3>
-                    <ul>
-                        <li><a href="#categorias">Categorias</a></li>
-                        <li><a href="#">Mais lidos</a></li>
-                        <li><a href="#">Últimos artigos</a></li>
-                        <li><a href="https://www.instagram.com/coguisinformatica/" target="_blank"
-                                rel="noopener noreferrer">Instagram</a></li>
-                        <li><a href="https://github.com/coguisinformatica" target="_blank"
-                                rel="noopener noreferrer">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer" aria-labelledby="footer-titulo">
         <div class="container site-footer__grid">
+
+            <!-- Empresa -->
             <div class="site-footer__brand">
                 <img class="site-footer__logo" src="images/logoCoguis.png" alt="Logo da Coguis Informática"
                     loading="lazy" decoding="async">
-                <h2 id="footer-titulo" class="site-footer__title">Coguis Informática</h2>
-                <p class="site-footer__tagline">Tecnologia que vai até você</p>
+                <h2 id="footer-titulo" class="site-footer__title">
+                    Coguis Informática
+                </h2>
+                <p class="site-footer__tagline">
+                    Tecnologia que vai até você.
+                </p>
             </div>
 
+            <!-- Navegação -->
+
             <nav class="site-footer__nav" aria-label="Links rápidos">
-                <h3 class="site-footer__heading">Links rápidos</h3>
+                <h3 class="site-footer__heading">
+                    Navegação
+                </h3>
                 <ul class="site-footer__links">
                     <li><a href="index.html#inicio">Início</a></li>
                     <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="index.html#confianca">Confiança</a></li>
+                    <li><a href="index.html#web">Desenvolvimento Web</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="index.html#contato">Contato</a></li>
                 </ul>
             </nav>
 
+            <!-- Blog -->
+
+            <nav class="site-footer__blog" aria-label="Blog">
+                <h3 class="site-footer__heading">
+                    Blog
+                </h3>
+                <ul class="site-footer__links">
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Últimos artigos</a></li>
+                    <li><a href="#">Mais lidos</a></li>
+                    <li><a href="#">Tecnologia Explicada</a></li>
+                    <li><a href="#">Manutenção</a></li>
+                </ul>
+            </nav>
+
+            <!-- Contato -->
+
             <div class="site-footer__contact">
-                <h3 class="site-footer__heading">Contato</h3>
+                <h3 class="site-footer__heading">
+                    Contato
+                </h3>
                 <ul class="site-footer__meta">
-                    <li><a href="https://www.instagram.com/coguisinformatica/" target="_blank"
-                            rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="mailto:coguisinformatica@gmail.com">E-mail</a></li>
+                    <li>
+                        <a href="https://www.instagram.com/coguisinformatica/" target="_blank"
+                            rel="noopener noreferrer">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/coguisinformatica" target="_blank" rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:coguisinformatica@gmail.com">
+                            E-mail
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener noreferrer">
+                            WhatsApp
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
 
         <div class="container site-footer__bottom">
-            <p>&copy; 2026 Coguis Informática. Todos os direitos reservados.</p>
+            <p>
+                © 2026 Coguis Informática. Todos os direitos reservados.
+            </p>
         </div>
     </footer>
 
