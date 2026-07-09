@@ -1,0 +1,66 @@
+/* Frente digital da Coguis com linguagem premium e comercial mais objetiva. */
+.web-services {
+    padding: var(--space-2xl) 0;
+    border-top: 1px solid rgba(199, 111, 255, 0.06);
+}
+
+.web-services__grid {
+    display: grid;
+    gap: var(--space-lg);
+}
+
+.web-services__content {
+    display: grid;
+    align-content: center;
+    gap: var(--space-md);
+}
+
+.web-services__cards {
+    display: grid;
+    gap: var(--space-sm);
+}
+
+.web-mini-card {
+    padding: 1.15rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: linear-gradient(180deg, rgba(13, 9, 24, 0.92), rgba(7, 5, 14, 0.96));
+    box-shadow: var(--shadow-sm);
+    backdrop-filter: blur(12px);
+}
+
+.web-mini-card__title {
+    margin: 0 0 0.45rem;
+    font-family: var(--font-display);
+    font-size: 1.08rem;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+}
+
+.web-mini-card__text {
+    margin: 0;
+    color: var(--color-text-soft);
+}
+
+.web-services__media,
+.digital-showcase__media {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid rgba(199, 111, 255, 0.18);
+    border-radius: var(--radius-xl);
+    background: linear-gradient(180deg, rgba(12, 8, 22, 0.94), rgba(6, 4, 12, 0.94));
+    box-shadow: var(--shadow-glow);
+    padding: clamp(0.45rem, 1vw, 0.75rem);
+}
+
+.web-services__media img,
+.digital-showcase__media img {
+    width: 100%;
+    border-radius: calc(var(--radius-xl) - 0.45rem);
+}
+
+.web-services__media img {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center;
+}

@@ -1,0 +1,210 @@
+@media (min-width: 48rem) {
+    .container {
+        width: min(calc(100% - 3rem), var(--container-max));
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .site-nav {
+        position: static;
+        display: flex;
+        align-items: center;
+        gap: var(--space-md);
+        padding: 0;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+
+    .site-nav__list {
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+    }
+
+    .hero {
+        padding-top: calc(var(--space-xl) + 1rem);
+    }
+
+    .hero__card {
+        min-height: 39rem;
+        padding: clamp(2rem, 4vw, 3.25rem);
+    }
+
+    .hero__card::before {
+        transform: translateX(18%);
+    }
+
+    .trust-band__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-md);
+    }
+
+    .manifesto__media img {
+        aspect-ratio: 16 / 11.5;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-lg);
+    }
+
+    .split-section__grid {
+        grid-template-columns: minmax(0, 1fr) minmax(18rem, 30rem);
+        gap: var(--space-2xl);
+        align-items: center;
+    }
+
+    .split-section__grid--reverse {
+        grid-template-columns: minmax(18rem, 30rem) minmax(0, 1fr);
+    }
+
+    .split-section__media img {
+        aspect-ratio: 4 / 4.6;
+    }
+
+    .social-proof__hero {
+        grid-template-columns: minmax(0, 1fr) minmax(18rem, 30rem);
+        gap: var(--space-2xl);
+        align-items: center;
+    }
+
+    .social-proof__media img {
+        aspect-ratio: 4 / 4.4;
+    }
+
+    .reviews-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .web-services__grid {
+        grid-template-columns: minmax(0, 1fr) minmax(18rem, 30rem);
+        gap: var(--space-2xl);
+        align-items: center;
+    }
+
+    .web-services__cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: var(--space-md);
+    }
+
+    .web-services__media img {
+        aspect-ratio: 4 / 4.5;
+    }
+
+    .digital-showcase__media img {
+        aspect-ratio: 16 / 10.8;
+    }
+
+    .final-contact__grid {
+        grid-template-columns: minmax(0, 1fr) minmax(18rem, 28rem);
+        gap: var(--space-2xl);
+        align-items: center;
+    }
+
+    .final-contact__media img {
+        aspect-ratio: 4 / 4.3;
+    }
+
+    .site-footer__grid {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) minmax(0, 1fr);
+        align-items: start;
+    }
+}
+
+@media (min-width: 64rem) {
+    .container {
+        width: min(calc(100% - 5rem), var(--container-max));
+    }
+
+    .hero__card {
+        min-height: 43.5rem;
+    }
+
+    .hero__card::before {
+        transform: translateX(20%);
+    }
+
+    .hero__title {
+        max-width: 12ch;
+    }
+
+    .trust-band__grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .manifesto__inner {
+        gap: var(--space-xl);
+    }
+
+    .manifesto__media img {
+        aspect-ratio: 16 / 9.4;
+    }
+
+    .services-grid {
+        gap: var(--space-xl);
+    }
+
+    .split-section__grid {
+        grid-template-columns: minmax(0, 1fr) minmax(22rem, 34rem);
+    }
+
+    .split-section__grid--reverse {
+        grid-template-columns: minmax(22rem, 34rem) minmax(0, 1fr);
+    }
+
+    .split-section__media img {
+        aspect-ratio: 4 / 4.25;
+    }
+
+    .social-proof__hero {
+        grid-template-columns: minmax(0, 1fr) minmax(22rem, 34rem);
+    }
+
+    .social-proof__media img {
+        aspect-ratio: 4 / 4.1;
+    }
+
+    .reviews-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        align-items: start;
+    }
+
+    .web-services__grid {
+        grid-template-columns: minmax(0, 1fr) minmax(22rem, 34rem);
+    }
+
+    .web-services__media img {
+        aspect-ratio: 4 / 4.1;
+    }
+
+    .digital-showcase__media img {
+        aspect-ratio: 16 / 9.1;
+    }
+
+    .final-contact__grid {
+        grid-template-columns: minmax(0, 1fr) minmax(22rem, 32rem);
+    }
+
+    .final-contact__media img {
+        aspect-ratio: 4 / 4.05;
+    }
+
+    .whatsapp-float {
+        right: 1.5rem;
+        bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 47.99rem) {
+    .whatsapp-float {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}

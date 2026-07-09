@@ -76,3 +76,21 @@
     width: 1.1rem;
     height: 1.1rem;
 }
+
+.site-footer__title {
+    font-size: 1.2rem;
+}
+
+.site-footer__meta a:hover .icon,
+.site-footer__meta a:focus-visible .icon {
+    color: var(--color-white);
+    border-color: rgba(199, 111, 255, 0.28);
+    background: rgba(199, 111, 255, 0.08);
+    transform: translateY(-1px);
+}
+
+.site-footer__bottom {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(199, 111, 255, 0.08);
+}
