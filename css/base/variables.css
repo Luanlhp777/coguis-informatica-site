@@ -1,0 +1,45 @@
+/* Tokens base do design system para esta primeira etapa da Home. */
+:root {
+    color-scheme: dark;
+
+    --color-bg: #040309;
+    --color-bg-soft: #0a0712;
+    --color-surface: rgba(12, 8, 21, 0.88);
+    --color-surface-strong: rgba(16, 11, 29, 0.96);
+    --color-border: rgba(186, 132, 255, 0.2);
+    --color-border-strong: rgba(215, 180, 255, 0.42);
+    --color-text: #fbf8ff;
+    --color-text-soft: #cbbfe3;
+    --color-text-muted: #9889b7;
+    --color-brand: #a855f7;
+    --color-brand-strong: #c76fff;
+    --color-brand-deep: #7c3aed;
+    --color-white: #ffffff;
+    --color-shadow: rgba(6, 3, 14, 0.5);
+
+    --font-display: "Space Grotesk", "Trebuchet MS", sans-serif;
+    --font-body: "Manrope", "Segoe UI", sans-serif;
+
+    --space-2xs: 0.375rem;
+    --space-xs: 0.75rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4.5rem;
+    --space-3xl: 6rem;
+
+    --radius-sm: 0.875rem;
+    --radius-md: 1.25rem;
+    --radius-lg: 1.75rem;
+    --radius-xl: 2.5rem;
+    --radius-pill: 999px;
+
+    --shadow-sm: 0 12px 30px rgba(6, 3, 14, 0.24);
+    --shadow-md: 0 24px 70px var(--color-shadow);
+    --shadow-glow: 0 0 0 1px rgba(199, 111, 255, 0.1), 0 24px 60px rgba(168, 85, 247, 0.16);
+
+    --container-max: 76rem;
+    --header-height: 5rem;
+    --transition-base: 220ms ease;
+}

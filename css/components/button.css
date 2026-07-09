@@ -1,0 +1,58 @@
+/* =====================================================
+   BUTTONS — Coguis UI
+===================================================== */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    min-height: 3.5rem;
+    padding: 0.95rem 1.45rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius-pill);
+    color: inherit;
+    font-weight: 800;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+        transform var(--transition-base),
+        border-color var(--transition-base),
+        background-color var(--transition-base),
+        box-shadow var(--transition-base),
+        color var(--transition-base);
+}
+
+.button:hover,
+.button:focus-visible {
+    transform: translateY(-1px);
+}
+
+.button:focus-visible {
+    outline: 2px solid var(--color-brand-strong);
+    outline-offset: 4px;
+}
+
+.button--primary {
+    background: linear-gradient(135deg, var(--color-brand-strong), var(--color-brand-deep));
+    box-shadow: 0 18px 50px rgba(168, 85, 247, 0.28);
+    color: var(--color-white);
+}
+
+.button--secondary {
+    border-color: var(--color-border-strong);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--color-text);
+}
+
+.button--outline {
+    border-color: var(--color-brand);
+    background: transparent;
+    color: var(--color-brand-strong);
+}
+
+.button--outline:hover,
+.button--outline:focus-visible {
+    background: rgba(168, 85, 247, 0.12);
+}

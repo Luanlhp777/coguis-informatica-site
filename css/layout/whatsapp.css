@@ -1,0 +1,55 @@
+/* CTA flutuante discreto, responsivo e sempre visível. */
+.whatsapp-float {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 60;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid rgba(199, 111, 255, 0.22);
+    border-radius: 50%;
+    background: #25d366;
+    box-shadow:
+        0 10px 30px rgba(37, 211, 102, 0.35),
+        0 0 20px rgba(37, 211, 102, 0.25);
+    backdrop-filter: blur(14px);
+    color: var(--color-white);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease,
+        border-color var(--transition-base);
+}
+
+.whatsapp-float:hover,
+.whatsapp-float:focus-visible {
+    transform: translateY(-3px) scale(1.05);
+    background: #20ba5a;
+    border-color: rgba(255, 255, 255, 0.22);
+    box-shadow:
+        0 10px 30px rgba(37, 211, 102, 0.35),
+        0 0 20px rgba(37, 211, 102, 0.25);
+}
+
+.whatsapp-float:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.92);
+    outline-offset: 4px;
+}
+
+.whatsapp-float__icon {
+    display: inline-grid;
+    place-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.whatsapp-float__icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}

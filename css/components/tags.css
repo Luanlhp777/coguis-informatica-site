@@ -1,0 +1,24 @@
+/* =====================================================
+   TAGS — Coguis UI
+===================================================== */
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0.7rem 1rem;
+    border: 1px solid rgba(168, 85, 247, 0.28);
+    border-radius: var(--radius-pill);
+    background: rgba(168, 85, 247, 0.12);
+    color: var(--color-brand-strong);
+    font-size: 0.9rem;
+    font-weight: 800;
+    transition:
+        transform var(--transition-base),
+        border-color var(--transition-base);
+}
+
+.tag:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-brand-strong);
+}

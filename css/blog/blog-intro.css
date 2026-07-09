@@ -24,31 +24,21 @@
 }
 
 .blog-intro__columns {
-
     display: grid;
-
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
     gap: 3rem;
-
     margin-top: 1rem;
 }
 
 .blog-intro__column {
-
     display: grid;
-
     gap: 1.6rem;
 }
 
 .blog-intro__column p {
-
     margin: 0;
-
     color: var(--color-text-soft);
-
     font-size: 1.05rem;
-
     line-height: 1.9;
 }
 
@@ -58,21 +48,6 @@
     gap: .85rem;
     max-width: 58rem;
     margin-top: .75rem;
-}
-
-.blog-intro__tags span {
-    padding: .7rem 1rem;
-    border: 1px solid rgba(168, 85, 247, .28);
-    border-radius: var(--radius-pill);
-    background: rgba(168, 85, 247, .12);
-    color: var(--color-brand-strong);
-    font-size: .9rem;
-    font-weight: 800;
-}
-
-.blog-intro__tags span:hover {
-    transform: translateY(-2px);
-    border-color: var(--color-brand-strong);
 }
 
 .blog-intro__footer {

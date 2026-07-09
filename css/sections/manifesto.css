@@ -1,0 +1,32 @@
+/* Manifesto institucional com imagem ampla e texto de apoio curto. */
+.manifesto {
+    padding: var(--space-2xl) 0;
+    border-top: 1px solid rgba(199, 111, 255, 0.06);
+}
+
+.manifesto__inner {
+    display: grid;
+    gap: var(--space-lg);
+}
+
+.manifesto__heading {
+    margin-bottom: 0;
+}
+
+.manifesto__media {
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid rgba(199, 111, 255, 0.18);
+    border-radius: var(--radius-xl);
+    background: linear-gradient(180deg, rgba(12, 8, 22, 0.94), rgba(6, 4, 12, 0.94));
+    box-shadow: var(--shadow-glow);
+    padding: clamp(0.45rem, 1vw, 0.75rem);
+}
+
+.manifesto__media img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: calc(var(--radius-xl) - 0.45rem);
+}

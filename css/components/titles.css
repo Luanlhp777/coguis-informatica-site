@@ -1,0 +1,19 @@
+/* =====================================================
+   TITLES — Coguis UI
+===================================================== */
+
+.section-title {
+    max-width: 15ch;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+}
+
+.card-title {
+    margin: 0;
+    font-family: var(--font-display);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
