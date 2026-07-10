@@ -1,129 +1,235 @@
 # 🍄 Coguis Informática
 
-**Tecnologia que vai até você.**
+> **Tecnologia que vai até você.**
 
-Site oficial da Coguis Informática, empresa especializada em suporte técnico, manutenção de computadores e notebooks, desenvolvimento web e soluções em tecnologia para clientes residenciais e empresas.
+Site institucional oficial da **Coguis Informática**, desenvolvido com foco em performance, organização, acessibilidade e escalabilidade.
+
+O projeto representa a presença digital da empresa, reunindo serviços de assistência técnica, desenvolvimento web, presença digital e produção de conteúdo através do Blog da Coguis.
 
 ---
 
-## 🌐 Site Online
-
-Acesse o site oficial:
+# 🌐 Site Oficial
 
 🔗 https://coguisinformatica.github.io/coguisinformatica-site-coguis/
 
 ---
 
-## 📋 Sobre o Projeto
+# 📖 Sobre o Projeto
 
-Este projeto foi desenvolvido para representar a presença digital da Coguis Informática, apresentando seus serviços, diferenciais, avaliações de clientes e canais de contato.
+O site da Coguis Informática foi desenvolvido para oferecer uma experiência moderna, intuitiva e totalmente responsiva, apresentando os principais serviços da empresa e fortalecendo sua presença digital.
 
-O objetivo é oferecer uma experiência moderna, responsiva e intuitiva para clientes que procuram soluções em tecnologia com atendimento humanizado e profissional.
+Além do site institucional, o projeto evoluiu para uma arquitetura organizada, documentada e preparada para crescimento contínuo, servindo como base para futuros projetos da Coguis.
 
 ---
 
-## 🚀 Serviços Apresentados
+# ✨ Principais Recursos
 
-- 💻 Manutenção e suporte técnico
-- 🔧 Upgrade de SSD e memória RAM
-- 🛡️ Remoção de vírus e malwares
+- 🍄 Site institucional completo
+- 📝 Blog oficial da Coguis
+- 📱 Layout totalmente responsivo
+- ⚡ Alto desempenho
+- ♿ Boas práticas de acessibilidade
+- 🔍 Estrutura preparada para SEO
+- 🎨 Design System próprio
+- 🧩 Componentização do CSS
+- 📚 Documentação técnica completa
+
+---
+
+# 💼 Serviços Apresentados
+
+- 💻 Manutenção de computadores
+- 🖥️ Manutenção de notebooks
+- ⚙️ Upgrade SSD e Memória RAM
+- 🛡️ Remoção de vírus
 - 💾 Backup e recuperação de dados
-- 🌐 Desenvolvimento de sites profissionais
+- 🌐 Desenvolvimento de sites
+- 📈 Presença Digital
+- 🔒 Segurança da Informação
 - 🏢 Soluções para empresas
-- 🔒 Segurança digital e privacidade de dados
 - 🚚 Busca e entrega de equipamentos
 
 ---
 
-## ⭐ Diferenciais
+# ⭐ Diferenciais
 
-- Atendimento personalizado
-- Transparência nos serviços
-- Compromisso com a privacidade dos dados
+- Atendimento humanizado
+- Transparência durante todo o serviço
+- Privacidade e proteção de dados
 - Boas práticas alinhadas à LGPD
-- Soluções modernas e confiáveis
-- Suporte para pessoas e empresas
+- Desenvolvimento moderno
+- Suporte residencial e empresarial
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+# 🛠 Tecnologias Utilizadas
+
+## Front-end
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (ES6)
+
+## Ferramentas
+
 - Git
+- GitHub
 - GitHub Pages
+- Visual Studio Code
 
 ---
 
-## 📁 Estrutura do Projeto
+# 🏗 Arquitetura CSS
+
+O projeto utiliza uma arquitetura modular organizada em camadas.
 
 ```text
-coguisinformatica-site-coguis/
+css/
+
+├── base/
+│   ├── variables.css
+│   └── base.css
 │
-├── index.html
-├── README.md
+├── components/
+│   ├── button.css
+│   ├── cards.css
+│   ├── container.css
+│   ├── sections.css
+│   ├── tags.css
+│   └── titles.css
 │
-├── css/
-│   └── style.css
+├── layout/
+│   ├── header.css
+│   ├── footer.css
+│   └── whatsapp.css
 │
-├── js/
-│   └── script.js
+├── sections/
+│   ├── home-hero.css
+│   ├── trust.css
+│   ├── manifesto.css
+│   ├── services-showcase.css
+│   ├── split-section.css
+│   ├── social-proof.css
+│   ├── web-services.css
+│   ├── digital-showcase.css
+│   ├── final-contact.css
+│   └── responsive.css
 │
-├── images/
+├── blog/
 │
-└── screenshots/
-    ├── home.png
-    ├── servicos.png
-    ├── avaliacao.png
-    └── contato.png
+└── style.css
 ```
 
 ---
 
-## 📱 Redes e Contato
+# 📁 Estrutura do Projeto
 
-📧 E-mail: coguisinformatica@gmail.com
+```text
+coguisinformatica-site-coguis/
 
-📸 Instagram:
-https://www.instagram.com/coguisinformatica
-
-⭐ Avaliações Google:
-https://share.google/F29qjidETwMLqX9dq
-
-🌐 Site:
-https://coguisinformatica.github.io/coguisinformatica-site-coguis/
+├── index.html
+├── blog.html
+├── README.md
+│
+├── css/
+├── js/
+├── images/
+├── screenshots/
+│
+└── docs/
+    ├── DESIGN-SYSTEM.md
+    ├── BLOG-CSS-ARCHITECTURE.md
+    └── SITE-CSS-ARCHITECTURE.md
+```
 
 ---
 
-## 📸 Capturas de Tela
+# 📚 Documentação
 
-### Home
+O projeto possui documentação própria para facilitar manutenção e evolução.
+
+- 🍄 Design System
+- 🍄 Arquitetura CSS da Home
+- 🍄 Arquitetura CSS do Blog
+
+Toda a documentação encontra-se na pasta:
+
+```text
+docs/
+```
+
+---
+
+# 📸 Capturas de Tela
+
+## Home
 
 ![Home](screenshots/home.png)
 
-### Serviços
+---
+
+## Serviços
 
 ![Serviços](screenshots/servicos.png)
 
-### Avaliações
+---
+
+## Avaliações
 
 ![Avaliações](screenshots/avaliacao.png)
 
-### Contato
+---
+
+## Contato
 
 ![Contato](screenshots/contato.png)
 
 ---
 
-## 🎯 Objetivo
+# 🎯 Objetivos do Projeto
 
-A Coguis Informática tem como missão oferecer soluções tecnológicas acessíveis, confiáveis e seguras para pessoas e empresas, sempre com foco na qualidade do atendimento e na satisfação dos clientes.
+- Fortalecer a presença digital da Coguis Informática.
+- Demonstrar profissionalismo e organização.
+- Servir como base para futuros projetos.
+- Aplicar boas práticas de desenvolvimento Front-end.
+- Evoluir continuamente através de documentação e componentização.
 
 ---
 
-## 📄 Licença
+# 🚀 Próximas Evoluções
 
-Este projeto foi desenvolvido para uso institucional da Coguis Informática.
+- Sistema de artigos do Blog
+- Busca de conteúdo
+- Categorias de artigos
+- Integração com APIs públicas
+- Novos componentes da Coguis UI
+- Melhorias contínuas de SEO
+- Otimizações de performance
 
-© 2026 Coguis Informática - Todos os direitos reservados.
+---
+
+# 📬 Contato
+
+📧 **E-mail**
+
+coguisinformatica@gmail.com
+
+📸 **Instagram**
+
+https://www.instagram.com/coguisinformatica
+
+⭐ **Google Business Profile**
+
+https://share.google/F29qjidETwMLqX9dq
+
+🌐 **Site Oficial**
+
+https://coguisinformatica.github.io/coguisinformatica-site-coguis/
+
+---
+
+# 📄 Licença
+
+Este projeto foi desenvolvido para uso institucional da **Coguis Informática**.
+
+© 2026 Coguis Informática — Todos os direitos reservados.
