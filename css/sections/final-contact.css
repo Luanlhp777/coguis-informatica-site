@@ -1,9 +1,4 @@
 /* Encerramento da jornada com foco em conversão. */
-.final-contact {
-    padding: var(--space-2xl) 0;
-    border-top: 1px solid rgba(199, 111, 255, 0.06);
-}
-
 .final-contact__grid {
     display: grid;
     gap: var(--space-lg);

@@ -1,9 +1,4 @@
 /* Seções editoriais divididas para aprofundar diferenciais sem poluir a Home. */
-.split-section {
-    padding: var(--space-2xl) 0;
-    border-top: 1px solid rgba(199, 111, 255, 0.06);
-}
-
 .split-section__grid {
     display: grid;
     gap: var(--space-lg);

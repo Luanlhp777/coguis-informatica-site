@@ -1,9 +1,4 @@
 /* Prova social em três camadas: reputação principal, avaliações reais e convite para avaliar. */
-.social-proof {
-    padding: var(--space-2xl) 0;
-    border-top: 1px solid rgba(199, 111, 255, 0.06);
-}
-
 .social-proof__hero {
     display: grid;
     gap: var(--space-lg);

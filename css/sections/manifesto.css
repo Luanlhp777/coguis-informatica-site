@@ -1,9 +1,4 @@
 /* Manifesto institucional com imagem ampla e texto de apoio curto. */
-.manifesto {
-    padding: var(--space-2xl) 0;
-    border-top: 1px solid rgba(199, 111, 255, 0.06);
-}
-
 .manifesto__inner {
     display: grid;
     gap: var(--space-lg);

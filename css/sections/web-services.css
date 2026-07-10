@@ -1,9 +1,4 @@
 /* Frente digital da Coguis com linguagem premium e comercial mais objetiva. */
-.web-services {
-    padding: var(--space-2xl) 0;
-    border-top: 1px solid rgba(199, 111, 255, 0.06);
-}
-
 .web-services__grid {
     display: grid;
     gap: var(--space-lg);
