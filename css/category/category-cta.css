@@ -1,0 +1,36 @@
+/* ==========================================================
+   CATEGORY CTA
+   Chamada para ação das páginas de categoria
+========================================================== */
+
+.category-cta__card {
+    display: grid;
+    gap: var(--space-xl);
+
+    padding: clamp(1.75rem, 4vw, 3rem);
+
+    border: 1px solid rgba(199, 111, 255, 0.18);
+    border-radius: var(--radius-xl);
+
+    background:
+        radial-gradient(circle at top right,
+            rgba(168, 85, 247, 0.14),
+            transparent 35%),
+        linear-gradient(180deg,
+            rgba(14, 10, 26, .96),
+            rgba(7, 5, 14, .98));
+
+    box-shadow: var(--shadow-glow);
+}
+
+.category-cta__card .section-title {
+    max-width: 16ch;
+}
+
+.category-cta__card .section-text {
+    max-width: 42rem;
+}
+
+.category-cta .button {
+    justify-self: start;
+}

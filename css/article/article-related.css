@@ -1,0 +1,67 @@
+/* ==========================================================
+   ARTICLE RELATED
+   Artigos relacionados ao conteúdo atual
+========================================================== */
+
+.related-posts {
+    padding: var(--space-2xl) 0 var(--space-3xl);
+}
+
+.related-posts__grid {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.related-post-card {
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    background: linear-gradient(180deg,
+            rgba(13, 9, 24, 0.92),
+            rgba(7, 5, 14, 0.96));
+    box-shadow: var(--shadow-sm);
+    transition:
+        transform var(--transition-base),
+        border-color var(--transition-base),
+        box-shadow var(--transition-base);
+}
+
+.related-post-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-border-strong);
+    box-shadow: var(--shadow-glow);
+}
+
+.related-post-card>a {
+    display: grid;
+    gap: 0.85rem;
+    height: 100%;
+    padding: 0.7rem;
+}
+
+.related-post-card img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center;
+    border-radius: calc(var(--radius-xl) - 0.55rem);
+}
+
+.related-post-card .post-category {
+    margin-top: 0.25rem;
+}
+
+.related-post-card h3 {
+    margin: 0;
+    padding: 0 0.35rem 0.55rem;
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+}
+
+.related-post-card a:focus-visible {
+    outline: 2px solid var(--color-brand-strong);
+    outline-offset: -4px;
+    border-radius: var(--radius-xl);
+}

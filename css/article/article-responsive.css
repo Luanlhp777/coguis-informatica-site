@@ -1,0 +1,166 @@
+/* ==========================================================
+   ARTICLE RESPONSIVE
+   Responsividade das páginas de artigo
+========================================================== */
+
+/* ==========================================
+   TABLET E DESKTOP
+========================================== */
+
+@media (min-width: 48rem) {
+    .article-hero__grid {
+        grid-template-columns:
+            minmax(0, 1fr) minmax(20rem, 30rem);
+        gap: var(--space-2xl);
+    }
+
+    .article-meta {
+        gap: 0.75rem 1.25rem;
+    }
+
+    .related-posts__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* ==========================================
+   DESKTOP AMPLO
+========================================== */
+
+@media (min-width: 64rem) {
+    .article-hero {
+        padding-top: var(--space-2xl);
+    }
+
+    .article-hero__grid {
+        grid-template-columns:
+            minmax(0, 1.05fr) minmax(24rem, 0.95fr);
+    }
+
+    .article-hero__media img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .related-posts__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 47.99rem) {
+    .article-breadcrumb {
+        padding-top: var(--space-md);
+    }
+
+    .article-breadcrumb__list {
+        font-size: 0.82rem;
+    }
+
+    .article-hero {
+        padding: var(--space-lg) 0 var(--space-xl);
+    }
+
+    .article-hero__grid {
+        gap: var(--space-lg);
+    }
+
+    .article-hero__title {
+        max-width: none;
+        font-size: clamp(2.15rem, 11vw, 3.35rem);
+    }
+
+    .article-hero__summary {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .article-meta {
+        display: grid;
+        gap: 0.4rem;
+    }
+
+    .article-meta span {
+        display: block;
+    }
+
+    .article-meta span:not(:last-child)::after {
+        display: none;
+        content: none;
+    }
+
+    .article-hero__media {
+        padding: 0.45rem;
+        border-radius: var(--radius-lg);
+    }
+
+    .article-hero__media img {
+        aspect-ratio: 4 / 3;
+        border-radius: calc(var(--radius-lg) - 0.35rem);
+    }
+
+    .article {
+        padding-top: var(--space-xl);
+    }
+
+    .article-content {
+        width: 100%;
+    }
+
+    .article-content h2 {
+        font-size: clamp(1.6rem, 8vw, 2rem);
+    }
+
+    .article-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .article-content p,
+    .article-content li {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .article-content table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .coguis-tip,
+    .study-reference,
+    .article-cta {
+        margin: var(--space-2xl) 0;
+        padding: 1.35rem;
+        border-radius: var(--radius-lg);
+    }
+
+    .coguis-tip h2,
+    .study-reference h2,
+    .article-cta h2 {
+        font-size: 1.45rem;
+    }
+
+    .article-cta .button,
+    .study-reference .button {
+        width: 100%;
+    }
+
+    .article-faq summary {
+        padding: 1rem;
+    }
+
+    .article-faq details p {
+        padding: 0 1rem 1rem;
+    }
+
+    .related-posts {
+        padding-bottom: var(--space-2xl);
+    }
+
+    .related-post-card h3 {
+        font-size: 1.15rem;
+    }
+}

@@ -1,0 +1,59 @@
+/* ==========================================================
+   CATEGORY HERO
+   Cabeçalho principal das páginas de categoria
+========================================================== */
+
+.category-hero__grid {
+    display: grid;
+    gap: var(--space-2xl);
+    align-items: center;
+}
+
+.category-hero__content {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.category-hero__title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 6vw, 4.6rem);
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+}
+
+.category-hero__text {
+    max-width: 42rem;
+    margin: 0;
+    color: var(--color-text-soft);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.category-hero__meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.category-hero__media {
+    margin: 0;
+    overflow: hidden;
+    padding: 0.6rem;
+    border: 1px solid rgba(199, 111, 255, 0.18);
+    border-radius: var(--radius-xl);
+    background: linear-gradient(180deg,
+            rgba(12, 8, 22, 0.94),
+            rgba(6, 4, 12, 0.96));
+    box-shadow: var(--shadow-glow);
+}
+
+.category-hero__media img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center;
+    border-radius: calc(var(--radius-xl) - 0.45rem);
+}

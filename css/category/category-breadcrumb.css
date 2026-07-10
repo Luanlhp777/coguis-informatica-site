@@ -1,0 +1,56 @@
+/* ==========================================================
+   CATEGORY BREADCRUMB
+   Navegação estrutural das páginas de categoria
+========================================================== */
+
+.category-breadcrumb {
+    padding-top: var(--space-lg);
+}
+
+.category-breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+.category-breadcrumb__list li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.category-breadcrumb__list li:not(:last-child)::after {
+    color: var(--color-border-strong);
+    content: "/";
+}
+
+.category-breadcrumb__list a {
+    color: var(--color-text-soft);
+
+    transition: color var(--transition-base);
+}
+
+.category-breadcrumb__list a:hover,
+.category-breadcrumb__list a:focus-visible {
+    color: var(--color-brand-strong);
+}
+
+.category-breadcrumb__list a:focus-visible {
+    outline: 2px solid var(--color-brand-strong);
+    outline-offset: 4px;
+    border-radius: 0.25rem;
+}
+
+.category-breadcrumb__list [aria-current="page"] {
+    color: var(--color-text);
+    font-weight: 700;
+}

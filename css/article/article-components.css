@@ -1,0 +1,127 @@
+/* ==========================================================
+   ARTICLE COMPONENTS
+   Componentes reutilizáveis dos artigos
+========================================================== */
+
+/* ==========================================
+   Dica do Coguis
+========================================== */
+
+.coguis-tip,
+.study-reference,
+.article-cta {
+    display: grid;
+    gap: var(--space-md);
+
+    margin: var(--space-3xl) 0;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+
+    border: 1px solid rgba(199, 111, 255, 0.18);
+    border-radius: var(--radius-xl);
+
+    background:
+        linear-gradient(180deg,
+            rgba(14, 10, 26, .96),
+            rgba(7, 5, 14, .98));
+
+    box-shadow: var(--shadow-glow);
+}
+
+.coguis-tip h2,
+.study-reference h2,
+.article-cta h2 {
+    margin: 0;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(1.5rem, 4vw, 2rem);
+
+    line-height: 1.1;
+}
+
+.coguis-tip p,
+.study-reference p,
+.article-cta p {
+    margin: 0;
+}
+
+/* ==========================================
+   FAQ
+========================================== */
+
+.article-faq {
+    display: grid;
+    gap: var(--space-md);
+
+    margin-top: var(--space-3xl);
+}
+
+.article-faq details {
+    overflow: hidden;
+
+    border: 1px solid rgba(199, 111, 255, .15);
+    border-radius: var(--radius-lg);
+
+    background: rgba(255, 255, 255, .02);
+
+    transition:
+        border-color var(--transition-base),
+        background var(--transition-base);
+}
+
+.article-faq details[open] {
+    border-color: rgba(199, 111, 255, .35);
+
+    background: rgba(199, 111, 255, .05);
+}
+
+.article-faq summary {
+    cursor: pointer;
+
+    padding: 1rem 1.25rem;
+
+    font-weight: 700;
+
+    list-style: none;
+}
+
+.article-faq summary::-webkit-details-marker {
+    display: none;
+}
+
+.article-faq summary::after {
+    float: right;
+
+    color: var(--color-brand-strong);
+
+    content: "+";
+}
+
+.article-faq details[open] summary::after {
+    content: "–";
+}
+
+.article-faq details p {
+    padding:
+        0 1.25rem 1.25rem;
+
+    margin: 0;
+}
+
+/* ==========================================
+   Botões internos
+========================================== */
+
+.article-cta .button,
+.study-reference .button {
+    justify-self: start;
+}
+
+/* ==========================================
+   Separação visual
+========================================== */
+
+.article-content aside+.article-faq,
+.article-content section+.article-cta {
+    margin-top: var(--space-3xl);
+}

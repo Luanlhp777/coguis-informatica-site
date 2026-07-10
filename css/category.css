@@ -1,0 +1,10 @@
+/* ==========================================================
+   CATEGORY
+========================================================== */
+
+@import url("./category/category-base.css");
+@import url("./category/category-breadcrumb.css");
+@import url("./category/category-hero.css");
+@import url("./category/category-posts.css");
+@import url("./category/category-cta.css");
+@import url("./category/category-responsive.css");
