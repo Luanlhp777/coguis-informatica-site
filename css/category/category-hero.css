@@ -54,6 +54,6 @@
     width: 100%;
     aspect-ratio: 16 / 10;
     object-fit: cover;
-    object-position: center;
+    object-position: 1% center;
     border-radius: calc(var(--radius-xl) - 0.45rem);
 }
