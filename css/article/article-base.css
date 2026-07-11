@@ -55,13 +55,14 @@
     color: var(--color-text);
 }
 
-.article-content a {
+.article-content a:not(.button) {
     color: var(--color-brand-strong);
     text-decoration: underline;
     text-underline-offset: 0.2rem;
 }
 
-.article-content a:hover {
+.article-content a:not(.button):hover,
+.article-content a:not(.button):focus-visible {
     color: var(--color-white);
 }
 
